@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "890599149713",
+    "project_id": "aradhanatodolistapp",
+    "storage_bucket": "aradhanatodolistapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890599149713:android:b99e7b6ba772644e652f30",
+        "android_client_info": {
+          "package_name": "com.example.todolistapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgGYAg9twlpNyrYJyZx96mmxWxrYRHwdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
