@@ -1,48 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".AddNewTask">
 
     <EditText
         android:id="@+id/task_edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginTop="16dp"
-        android:hint="Write your're task here..."
-        android:textColor="@color/green_blue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="12dp"
+        android:hint="Write your task here..."
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_blue"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:backgroundTint="@color/green_blue"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/setDueDate_m"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="8dp"
-        android:drawableRight="@drawable/calender"
-        android:drawablePadding="8dp"
-        android:text="Set Due Date"
-        android:textColor="@color/green_blue"
-        android:textSize="16sp"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/task_edittext" />
-
-    <Button
-        android:id="@+id/save_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Save Task"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/setDueDate_m"
-        app:layout_constraintTop_toBottomOf="@+id/task_edittext" />
+        app:layout_constraintTop_toBottomOf="@id/task_edittext">
 
+        <TextView
+            android:id="@+id/setDueDate_m"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableEnd="@drawable/calender"
+            android:drawablePadding="8dp"
+            android:text="Set Due Date"
+            android:textColor="@color/green_blue"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Task"
+            android:paddingHorizontal="16dp"
+            android:backgroundTint="@color/dark_blue"
+            android:textColor="@color/white" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
